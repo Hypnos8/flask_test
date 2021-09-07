@@ -11,4 +11,4 @@ where the file is app.py (first "app before the colon") and it contains a variab
 
 # Nginx
 See config file.
-Has to be linked to `/etc/nginx/sites-enabled/' 
+Has to be linked to `/etc/nginx/sites-enabled/`
