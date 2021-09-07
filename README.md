@@ -4,7 +4,7 @@ test with gunicorn ngnix flask
 ## Gunicorn
 - Start gunicorn with 
 `gunicorn --bind unix:testproject.sock app:app` 
-where the file is app.py (first "app before the colon") and it contains a variable like
+where the file is app.py (first "app" before the colon) and it contains a variable like
 `app = Flask(__name__)`
 
 - Nginx cann access gunicorn by accessing the `testproject.sock`, which is is the current folder
