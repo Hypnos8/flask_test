@@ -1,0 +1,12 @@
+# in /etc/nginx/sites-available/flask-test
+
+server {
+        listen 5000;
+
+
+        location / {
+                include proxy_params;
+                proxy_pass http://unix:/home/eric/flask-test/flask_test/testproject.sock;
+        }
+}
+
