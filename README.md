@@ -13,7 +13,7 @@ where the file is app.py (first "app" before the colon) and it contains a variab
 
 ## Deploy both containers with docker compose
 - `docker-compose build `(rebuilds all images) -> RUN IT EVERYTIME THE BUILD IS CHANGED!!!
-- docker-compose up (launches containers )
+- `docker-compose up` (launches containers )
 
 Note: The name of the gunicorn container has to match the proxy_pass hostname in the nginx file, otherwise nginx won't know where to pass the nformation to.
 
