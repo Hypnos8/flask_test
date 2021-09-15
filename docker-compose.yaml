@@ -1,9 +1,11 @@
 version: "3.3"
 
 services:
-        unicon-container:
+        gunicorn-container:
                 build: ./gunicorn
         nginx:
                 build: ./nginx
                 ports:
                         - "5000:5000"
+                depends_on:
+                        - gunicorn-container
