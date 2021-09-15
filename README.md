@@ -17,5 +17,5 @@ where the file is app.py (first "app" before the colon) and it contains a variab
 
 Note: 
 - The name of the gunicorn container has to match the proxy_pass hostname in the nginx file, otherwise nginx won't know where to pass the nformation to.
-- containers specified in a docker-compose.yaml are by default in the same network
+- containers specified in a docker-compose.yaml are by default in the same network + container names are resolved by the internal docker DNS server
 
