@@ -9,7 +9,7 @@ where the file is app.py (first "app" before the colon) and it contains a variab
 
 ## Create Nginx container
 -  Create nginx container (see nginx/Dockerfile for details)
-- Nginx cann access gunicorn by accessing the `gunicorn-container:80000`, where gunicorn-container is the name of the gunicorn container... (wow)
+- Nginx cann access gunicorn by accessing the `gunicorn-container:80000`, the hostname is specified in the `default.conf` file
 
 ## Deploy both containers with docker compose
 - `docker-compose build `(rebuilds all images) -> RUN IT EVERYTIME THE BUILD IS CHANGED!!!
